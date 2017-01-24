@@ -42,9 +42,9 @@ class BaseViewController: UIViewController, SlideMenuDelegate {
             
             break
         case 3:
-            print("Capped Mortgage\n", terminator: "")
+            print("Discount Mortgage\n", terminator: "")
             
-            self.openViewControllerBasedOnIdentifier("CappedVC")
+            self.openViewControllerBasedOnIdentifier("DiscountVC")
             
             break
         default:

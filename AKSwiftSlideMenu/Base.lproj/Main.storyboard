@@ -306,9 +306,129 @@ A recent survey undertaken at the University of Leeds found that from a sample o
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mmn-PL-HS6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="912.5" y="96.5"/>
+            <point key="canvasLocation" x="1223" y="402"/>
         </scene>
-        <!--TrackerVC-->
+        <!--Positive Future Rates-->
+        <scene sceneID="bid-8X-GlQ">
+            <objects>
+                <viewController id="HXN-w6-UqP" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ddt-5D-cRQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Tln-vQ-Zvj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GR4-F1-tY4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="2000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Positive Future Rates" id="2NK-s5-xZO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XJp-kz-5wZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1828" y="2530"/>
+        </scene>
+        <!--Average Future Rates-->
+        <scene sceneID="FFr-D7-ecV">
+            <objects>
+                <viewController id="BkL-4k-x71" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hho-ew-2iB"/>
+                        <viewControllerLayoutGuide type="bottom" id="D2W-FQ-EvP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6rm-yg-DgF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="2000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Average Future Rates" id="Oyg-gv-da4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zJp-v7-1Jb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2274" y="2660"/>
+        </scene>
+        <!--Negative Future Rates-->
+        <scene sceneID="O6l-ui-PX4">
+            <objects>
+                <viewController id="iec-93-dlY" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="srq-iP-mLV"/>
+                        <viewControllerLayoutGuide type="bottom" id="wYR-I5-0UA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sgB-xD-JSY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="2000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tracker1.png" translatesAutoresizingMaskIntoConstraints="NO" id="Pfw-kh-wP5">
+                                <rect key="frame" x="16" y="72" width="343" height="205"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Negative Future Rates" id="K4T-nf-brH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zjI-rI-E5H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2703.5" y="2530"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Hm1-Id-g5k">
+            <objects>
+                <viewController id="fLV-6I-6iw" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zjf-1B-CQD"/>
+                        <viewControllerLayoutGuide type="bottom" id="J8D-us-ofB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mwP-vl-cdj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="2000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2dM-LA-YoG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iqD-dP-nbs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3216" y="2530"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="M4o-1S-Tie">
+            <objects>
+                <viewController id="MUb-iX-f8S" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zJf-AY-ajh"/>
+                        <viewControllerLayoutGuide type="bottom" id="eYv-n9-3SK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7JP-kW-BMk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="2000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="oOs-fq-b8n"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dHo-3N-p8x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3650" y="2660"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Csy-7V-1yc">
+            <objects>
+                <viewController id="IGm-n5-WXl" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nkW-9B-tyj"/>
+                        <viewControllerLayoutGuide type="bottom" id="XsL-o1-nsR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YIW-sP-bsd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="2000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="l2T-B2-5wT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PaK-pE-loX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4096" y="2530"/>
+        </scene>
+        <!--Tracker Mortgages-->
         <scene sceneID="XIk-dR-zmC">
             <objects>
                 <viewController restorationIdentifier="TrackerVC" storyboardIdentifier="TrackerVC" id="rL0-eg-F41" customClass="TrackerVC" customModule="MortgageAssistance_LearningTool" customModuleProvider="target" sceneMemberID="viewController">
@@ -343,7 +463,7 @@ A recent survey undertaken at the University of Leeds found that from a sample o
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HaL-Pd-jhD">
-                                <rect key="frame" x="0.0" y="258" width="359" height="199"/>
+                                <rect key="frame" x="8" y="258" width="359" height="199"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">The Bank of England base rate can go up or down and is announced by the Bank of England's Monetary Policy Committee. Banks and building societies use the base rate when calculating their interest rates for some mortgage products.
 
@@ -352,22 +472,49 @@ Put simply, if the base rate decreases during your tracker mortage term, you wil
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qPb-GJ-Rar">
+                                <rect key="frame" x="102" y="478" width="171" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Positive Future Rates"/>
+                                <connections>
+                                    <segue destination="HXN-w6-UqP" kind="push" id="csl-hQ-zx8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugw-84-9jC">
+                                <rect key="frame" x="103" y="512" width="169" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Average Future Rates"/>
+                                <connections>
+                                    <segue destination="BkL-4k-x71" kind="push" id="19f-2y-vVw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lBt-bZ-ZVh">
+                                <rect key="frame" x="101" y="545" width="173" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Negative Future Rates"/>
+                                <connections>
+                                    <segue destination="iec-93-dlY" kind="push" id="fJ9-Vx-7yB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="6ix-Gd-2LL"/>
+                    <navigationItem key="navigationItem" title="Tracker Mortgages" id="6ix-Gd-2LL"/>
                     <connections>
-                        <segue destination="Koh-g8-pud" kind="push" id="lzL-IH-OaA"/>
+                        <outlet property="BadButton" destination="lBt-bZ-ZVh" id="Seb-Ai-3qH"/>
+                        <outlet property="GoodButton" destination="qPb-GJ-Rar" id="JXD-GZ-0bG"/>
+                        <outlet property="OkayButton" destination="ugw-84-9jC" id="YB8-GS-OwJ"/>
+                        <segue destination="Koh-g8-pud" kind="push" id="Uw2-R9-ojS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2C0-wp-ZEO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1388" y="-632"/>
+            <point key="canvasLocation" x="2273.5" y="402"/>
         </scene>
-        <!--CappedVC-->
+        <!--Discount Mortgages-->
         <scene sceneID="0aq-Du-GBm">
             <objects>
-                <viewController restorationIdentifier="CappedVC" storyboardIdentifier="CappedVC" id="Koh-g8-pud" customClass="CappedVC" customModule="MortgageAssistance_LearningTool" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="DiscountVC" storyboardIdentifier="DiscountVC" id="Koh-g8-pud" customClass="DiscountVC" customModule="MortgageAssistance_LearningTool" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="htz-Hx-Wsn"/>
                         <viewControllerLayoutGuide type="bottom" id="P5J-tE-mJg"/>
@@ -375,13 +522,39 @@ Put simply, if the base rate decreases during your tracker mortage term, you wil
                     <view key="view" contentMode="scaleToFill" id="aoU-Q5-kNv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="2000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BCG-fH-ggP">
+                                <rect key="frame" x="102" y="452" width="171" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Positive Future Rates"/>
+                                <connections>
+                                    <segue destination="fLV-6I-6iw" kind="push" id="P6b-CW-r97"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LWq-5Y-WSm">
+                                <rect key="frame" x="103" y="486" width="169" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Average Future Rates"/>
+                                <connections>
+                                    <segue destination="MUb-iX-f8S" kind="push" id="3Jf-ZZ-RfJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="byb-qA-12H">
+                                <rect key="frame" x="101" y="519" width="173" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Negative Future Rates"/>
+                                <connections>
+                                    <segue destination="IGm-n5-WXl" kind="push" id="RA0-uE-ubn"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="vlw-r4-hG3"/>
+                    <navigationItem key="navigationItem" title="Discount Mortgages" id="vlw-r4-hG3"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NZ7-t9-RR5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1897" y="-29"/>
+            <point key="canvasLocation" x="3650" y="402"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nrt-yR-DmY">
@@ -440,7 +613,7 @@ Put simply, if the base rate decreases during your tracker mortage term, you wil
                                         <rect key="frame" x="0.0" y="22" width="316" height="54"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kmA-Ah-Pww" id="PkJ-pF-O9W">
-                                            <rect key="frame" x="0.0" y="0.0" width="316" height="53.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="316" height="53"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" tag="100" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qcm-8o-Buf">
@@ -475,6 +648,9 @@ Put simply, if the base rate decreases during your tracker mortage term, you wil
             <point key="canvasLocation" x="-319" y="97"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Tracker1.png" width="530" height="376"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CappedVC: BaseViewController {
+class DiscountVC: BaseViewController {
     
     
     override func viewDidLoad() {

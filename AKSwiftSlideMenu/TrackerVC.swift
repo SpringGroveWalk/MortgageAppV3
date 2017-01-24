@@ -8,6 +8,10 @@
 import UIKit
 
 class TrackerVC: BaseViewController {
+
+    @IBOutlet weak var GoodButton: UIButton!
+    @IBOutlet weak var OkayButton: UIButton!
+    @IBOutlet weak var BadButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()

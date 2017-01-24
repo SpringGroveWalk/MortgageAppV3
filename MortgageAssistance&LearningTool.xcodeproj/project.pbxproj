@@ -44,7 +44,8 @@
 		D82B90771DEF0F16002876EF /* AppLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = D82B90761DEF0F16002876EF /* AppLogo.png */; };
 		D845269F1DD4C1DE00CA0B9E /* TrackerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D845269E1DD4C1DE00CA0B9E /* TrackerVC.swift */; };
 		D89CFB8E1DEDEE4A00714A0E /* AppLogoTransparent.png in Resources */ = {isa = PBXBuildFile; fileRef = D89CFB8D1DEDEE4A00714A0E /* AppLogoTransparent.png */; };
-		D8AB72AE1E3626A2002EFA12 /* CappedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AB72AD1E3626A2002EFA12 /* CappedVC.swift */; };
+		D8AB72AE1E3626A2002EFA12 /* DiscountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AB72AD1E3626A2002EFA12 /* DiscountVC.swift */; };
+		D8AB72B01E37D074002EFA12 /* Tracker1.png in Resources */ = {isa = PBXBuildFile; fileRef = D8AB72AF1E37D074002EFA12 /* Tracker1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,7 +88,8 @@
 		D82B90761DEF0F16002876EF /* AppLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppLogo.png; sourceTree = "<group>"; };
 		D845269E1DD4C1DE00CA0B9E /* TrackerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackerVC.swift; sourceTree = "<group>"; };
 		D89CFB8D1DEDEE4A00714A0E /* AppLogoTransparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppLogoTransparent.png; sourceTree = "<group>"; };
-		D8AB72AD1E3626A2002EFA12 /* CappedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CappedVC.swift; sourceTree = "<group>"; };
+		D8AB72AD1E3626A2002EFA12 /* DiscountVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscountVC.swift; sourceTree = "<group>"; };
+		D8AB72AF1E37D074002EFA12 /* Tracker1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tracker1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,7 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				753A55C21BB073E900254F27 /* AppDelegate.swift */,
-				D8AB72AD1E3626A2002EFA12 /* CappedVC.swift */,
+				D8AB72AD1E3626A2002EFA12 /* DiscountVC.swift */,
 				C6EEF9F71CB7E4E000A3DC6D /* HomeVC.swift */,
 				D845269E1DD4C1DE00CA0B9E /* TrackerVC.swift */,
 				D829B4151DDBC28700ADE68B /* LandingVC.swift */,
@@ -141,6 +143,7 @@
 			children = (
 				D82B90761DEF0F16002876EF /* AppLogo.png */,
 				D89CFB8D1DEDEE4A00714A0E /* AppLogoTransparent.png */,
+				D8AB72AF1E37D074002EFA12 /* Tracker1.png */,
 				D83C38631DEBA07000B2AC8C /* Landing Gif */,
 				753A55C11BB073E900254F27 /* Info.plist */,
 			);
@@ -249,6 +252,7 @@
 				D829B4421DDBC37300ADE68B /* giphy-19 (dragged).jpg in Resources */,
 				D829B43A1DDBC37300ADE68B /* giphy-11 (dragged).jpg in Resources */,
 				D829B4321DDBC37300ADE68B /* giphy-3 (dragged).jpg in Resources */,
+				D8AB72B01E37D074002EFA12 /* Tracker1.png in Resources */,
 				D829B4401DDBC37300ADE68B /* giphy-17 (dragged).jpg in Resources */,
 				D829B4471DDBC37300ADE68B /* giphy-24 (dragged).jpg in Resources */,
 				D829B4311DDBC37300ADE68B /* giphy-2 (dragged).jpg in Resources */,
@@ -286,7 +290,7 @@
 				C6EEF9F81CB7E4E000A3DC6D /* HomeVC.swift in Sources */,
 				753A55E31BB0753B00254F27 /* MenuViewController.swift in Sources */,
 				753A55C31BB073E900254F27 /* AppDelegate.swift in Sources */,
-				D8AB72AE1E3626A2002EFA12 /* CappedVC.swift in Sources */,
+				D8AB72AE1E3626A2002EFA12 /* DiscountVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
