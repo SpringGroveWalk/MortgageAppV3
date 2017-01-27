@@ -9,21 +9,21 @@ import UIKit
 
 class HomeVC: BaseViewController {
 
-    @IBOutlet var userNameLabel: UILabel!
+    @IBOutlet weak var userNameLabel: UILabel!
+    var getName = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         addSlideMenuButton()
         // Do any additional setup after loading the view.
         
+        userNameLabel.text! = getName
+        
 
     
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+
     
 
     /*

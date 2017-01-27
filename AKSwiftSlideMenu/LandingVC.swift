@@ -106,8 +106,13 @@ class LandingVC: BaseViewController {
         }
         */
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let destinationViewController : HomeVC = (segue.destination as? HomeVC)!
+    @IBAction func beginButton(_ sender: Any) {
     
+        let MainStory:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let desVC = MainStory.instantiateViewController(withIdentifier: "Home") as! HomeVC
+        
+        desVC.getName = nameTextField.text!
+        self.navigationController?.pushViewController(desVC, animated: true)
     }
+    
 }
