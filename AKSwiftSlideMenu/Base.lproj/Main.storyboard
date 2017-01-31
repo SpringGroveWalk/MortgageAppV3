@@ -419,7 +419,7 @@ Let's get started! click the menu button in the top left hand corner and select 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iqD-dP-nbs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3215.5" y="2530"/>
+            <point key="canvasLocation" x="3210" y="1876"/>
         </scene>
         <!--Average Future Rates-->
         <scene sceneID="M4o-1S-Tie">
@@ -512,7 +512,7 @@ Let's get started! click the menu button in the top left hand corner and select 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dHo-3N-p8x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3649.5" y="2660"/>
+            <point key="canvasLocation" x="3644" y="2006"/>
         </scene>
         <!--Negative Future Rates-->
         <scene sceneID="Csy-7V-1yc">
@@ -606,7 +606,7 @@ Let's get started! click the menu button in the top left hand corner and select 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PaK-pE-loX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4095.5" y="2530"/>
+            <point key="canvasLocation" x="4090" y="1876"/>
         </scene>
         <!--Tracker Mortgages-->
         <scene sceneID="XIk-dR-zmC">
@@ -1387,7 +1387,7 @@ The project aim was to develop a learning-based application to assist those less
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cak-00-acg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1804.5" y="4647.5"/>
+            <point key="canvasLocation" x="1806" y="2761"/>
         </scene>
         <!--Tra Ave Fut RatVC-->
         <scene sceneID="dMx-GQ-aQQ">
@@ -1447,7 +1447,7 @@ The project aim was to develop a learning-based application to assist those less
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Ie-V8-5AS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2271" y="4644"/>
+            <point key="canvasLocation" x="2272" y="2757"/>
         </scene>
         <!--Tra Neg Fut RatVC-->
         <scene sceneID="3Io-pv-Vqq">
@@ -1508,7 +1508,7 @@ The project aim was to develop a learning-based application to assist those less
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lsB-Fe-LmU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2741" y="4649"/>
+            <point key="canvasLocation" x="2742" y="2762"/>
         </scene>
     </scenes>
     <resources>

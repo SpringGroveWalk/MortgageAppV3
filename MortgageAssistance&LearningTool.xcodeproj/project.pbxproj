@@ -15,7 +15,6 @@
 		753A55E51BB0755100254F27 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753A55E41BB0755100254F27 /* BaseViewController.swift */; };
 		C6EEF9F61CB7E2AD00A3DC6D /* PlayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EEF9F51CB7E2AD00A3DC6D /* PlayVC.swift */; };
 		C6EEF9F81CB7E4E000A3DC6D /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EEF9F71CB7E4E000A3DC6D /* HomeVC.swift */; };
-		D80A30B41E37E4F100226FE4 /* thumbsuphousey.png in Resources */ = {isa = PBXBuildFile; fileRef = D80A30B21E37E4F100226FE4 /* thumbsuphousey.png */; };
 		D80A30B51E37E4F100226FE4 /* houseymchouseface.png in Resources */ = {isa = PBXBuildFile; fileRef = D80A30B31E37E4F100226FE4 /* houseymchouseface.png */; };
 		D821941F1E3B6B4B009E0166 /* Tracker_MortgageBreakdown.png in Resources */ = {isa = PBXBuildFile; fileRef = D821941E1E3B6B4B009E0166 /* Tracker_MortgageBreakdown.png */; };
 		D82194211E3B6E54009E0166 /* FixedRateFormula.png in Resources */ = {isa = PBXBuildFile; fileRef = D82194201E3B6E54009E0166 /* FixedRateFormula.png */; };
@@ -77,7 +76,6 @@
 		753A55E41BB0755100254F27 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		C6EEF9F51CB7E2AD00A3DC6D /* PlayVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayVC.swift; sourceTree = "<group>"; };
 		C6EEF9F71CB7E4E000A3DC6D /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
-		D80A30B21E37E4F100226FE4 /* thumbsuphousey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbsuphousey.png; sourceTree = "<group>"; };
 		D80A30B31E37E4F100226FE4 /* houseymchouseface.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = houseymchouseface.png; sourceTree = "<group>"; };
 		D821941E1E3B6B4B009E0166 /* Tracker_MortgageBreakdown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tracker_MortgageBreakdown.png; sourceTree = "<group>"; };
 		D82194201E3B6E54009E0166 /* FixedRateFormula.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FixedRateFormula.png; sourceTree = "<group>"; };
@@ -185,7 +183,6 @@
 				D82B90761DEF0F16002876EF /* AppLogo.png */,
 				D89CFB8D1DEDEE4A00714A0E /* AppLogoTransparent.png */,
 				D8AB72AF1E37D074002EFA12 /* Tracker1.png */,
-				D80A30B21E37E4F100226FE4 /* thumbsuphousey.png */,
 				D80A30B31E37E4F100226FE4 /* houseymchouseface.png */,
 				D821941E1E3B6B4B009E0166 /* Tracker_MortgageBreakdown.png */,
 				D82194201E3B6E54009E0166 /* FixedRateFormula.png */,
@@ -336,7 +333,6 @@
 				753A55CD1BB073E900254F27 /* LaunchScreen.xib in Resources */,
 				D829B4301DDBC37300ADE68B /* giphy-1 (dragged).jpg in Resources */,
 				D829B4411DDBC37300ADE68B /* giphy-18 (dragged).jpg in Resources */,
-				D80A30B41E37E4F100226FE4 /* thumbsuphousey.png in Resources */,
 				D829B4341DDBC37300ADE68B /* giphy-5 (dragged).jpg in Resources */,
 				753A55CA1BB073E900254F27 /* Images.xcassets in Resources */,
 				D82194211E3B6E54009E0166 /* FixedRateFormula.png in Resources */,
