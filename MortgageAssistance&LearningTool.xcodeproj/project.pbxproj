@@ -29,6 +29,10 @@
 		D82194341E3BA1EE009E0166 /* DisAveFutRatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82194331E3BA1EE009E0166 /* DisAveFutRatVC.swift */; };
 		D82194361E3BA201009E0166 /* DisNegFutRatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82194351E3BA201009E0166 /* DisNegFutRatVC.swift */; };
 		D82194381E3BA7FB009E0166 /* TraPosFutRatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82194371E3BA7FB009E0166 /* TraPosFutRatVC.swift */; };
+		D821943A1E40F8AA009E0166 /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82194391E40F8AA009E0166 /* AboutVC.swift */; };
+		D821943D1E41014F009E0166 /* CBodger.png in Resources */ = {isa = PBXBuildFile; fileRef = D821943B1E41014F009E0166 /* CBodger.png */; };
+		D821943E1E41014F009E0166 /* HTong.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D821943C1E41014F009E0166 /* HTong.jpg */; };
+		D82194401E410461009E0166 /* HouseyInspiration.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D821943F1E410461009E0166 /* HouseyInspiration.jpg */; };
 		D829B4161DDBC28700ADE68B /* LandingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D829B4151DDBC28700ADE68B /* LandingVC.swift */; };
 		D829B4301DDBC37300ADE68B /* giphy-1 (dragged).jpg in Resources */ = {isa = PBXBuildFile; fileRef = D829B4171DDBC37300ADE68B /* giphy-1 (dragged).jpg */; };
 		D829B4311DDBC37300ADE68B /* giphy-2 (dragged).jpg in Resources */ = {isa = PBXBuildFile; fileRef = D829B4181DDBC37300ADE68B /* giphy-2 (dragged).jpg */; };
@@ -87,6 +91,10 @@
 		D82194331E3BA1EE009E0166 /* DisAveFutRatVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisAveFutRatVC.swift; sourceTree = "<group>"; };
 		D82194351E3BA201009E0166 /* DisNegFutRatVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisNegFutRatVC.swift; sourceTree = "<group>"; };
 		D82194371E3BA7FB009E0166 /* TraPosFutRatVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TraPosFutRatVC.swift; sourceTree = "<group>"; };
+		D82194391E40F8AA009E0166 /* AboutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
+		D821943B1E41014F009E0166 /* CBodger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CBodger.png; sourceTree = "<group>"; };
+		D821943C1E41014F009E0166 /* HTong.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HTong.jpg; sourceTree = "<group>"; };
+		D821943F1E410461009E0166 /* HouseyInspiration.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HouseyInspiration.jpg; sourceTree = "<group>"; };
 		D829B4151DDBC28700ADE68B /* LandingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingVC.swift; sourceTree = "<group>"; };
 		D829B4171DDBC37300ADE68B /* giphy-1 (dragged).jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "giphy-1 (dragged).jpg"; sourceTree = "<group>"; };
 		D829B4181DDBC37300ADE68B /* giphy-2 (dragged).jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "giphy-2 (dragged).jpg"; sourceTree = "<group>"; };
@@ -152,6 +160,7 @@
 			children = (
 				753A55C21BB073E900254F27 /* AppDelegate.swift */,
 				D8AB72AD1E3626A2002EFA12 /* DiscountVC.swift */,
+				D82194391E40F8AA009E0166 /* AboutVC.swift */,
 				C6EEF9F71CB7E4E000A3DC6D /* HomeVC.swift */,
 				D821942A1E3BA16E009E0166 /* Future Rates */,
 				D845269E1DD4C1DE00CA0B9E /* TrackerVC.swift */,
@@ -170,6 +179,9 @@
 		753A55C01BB073E900254F27 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D821943F1E410461009E0166 /* HouseyInspiration.jpg */,
+				D821943B1E41014F009E0166 /* CBodger.png */,
+				D821943C1E41014F009E0166 /* HTong.jpg */,
 				D82B90761DEF0F16002876EF /* AppLogo.png */,
 				D89CFB8D1DEDEE4A00714A0E /* AppLogoTransparent.png */,
 				D8AB72AF1E37D074002EFA12 /* Tracker1.png */,
@@ -296,6 +308,8 @@
 				D829B4481DDBC37300ADE68B /* giphy-25 (dragged).jpg in Resources */,
 				D82194241E3B6F78009E0166 /* Tracker_ExampleMortgage1Calc.png in Resources */,
 				D829B43B1DDBC37300ADE68B /* giphy-12 (dragged).jpg in Resources */,
+				D821943D1E41014F009E0166 /* CBodger.png in Resources */,
+				D82194401E410461009E0166 /* HouseyInspiration.jpg in Resources */,
 				D829B4361DDBC37300ADE68B /* giphy-7 (dragged).jpg in Resources */,
 				D82194291E3B77D9009E0166 /* Tracker_InterestCalc.png in Resources */,
 				D829B43F1DDBC37300ADE68B /* giphy-16 (dragged).jpg in Resources */,
@@ -331,6 +345,7 @@
 				D821941F1E3B6B4B009E0166 /* Tracker_MortgageBreakdown.png in Resources */,
 				D829B43E1DDBC37300ADE68B /* giphy-15 (dragged).jpg in Resources */,
 				D829B43D1DDBC37300ADE68B /* giphy-14 (dragged).jpg in Resources */,
+				D821943E1E41014F009E0166 /* HTong.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +367,7 @@
 				D829B4161DDBC28700ADE68B /* LandingVC.swift in Sources */,
 				C6EEF9F81CB7E4E000A3DC6D /* HomeVC.swift in Sources */,
 				753A55E31BB0753B00254F27 /* MenuViewController.swift in Sources */,
+				D821943A1E40F8AA009E0166 /* AboutVC.swift in Sources */,
 				D82194381E3BA7FB009E0166 /* TraPosFutRatVC.swift in Sources */,
 				753A55C31BB073E900254F27 /* AppDelegate.swift in Sources */,
 				D8AB72AE1E3626A2002EFA12 /* DiscountVC.swift in Sources */,

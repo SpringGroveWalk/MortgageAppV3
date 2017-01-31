@@ -154,7 +154,7 @@ A recent survey undertaken at the University of Leeds found that from a sample o
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tPg-Vg-nOU">
-                                                <rect key="frame" x="8" y="487" width="359" height="133"/>
+                                                <rect key="frame" x="8" y="482" width="359" height="133"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <string key="text">This handy app has been designed to help you understand exactly what you're signing up for. 
 
@@ -217,7 +217,7 @@ Let's get started! click the menu button in the top left hand corner and select 
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="2000"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Br8-jb-X3e">
-                                        <rect key="frame" x="0.0" y="-64" width="375" height="667"/>
+                                        <rect key="frame" x="0.0" y="-64" width="375" height="2000"/>
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Input Value in Years (e.g. 25)" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r8q-Xt-2xC" userLabel="Loan Length Text Field">
                                                 <rect key="frame" x="17" y="185" width="343" height="30"/>
@@ -327,7 +327,7 @@ Let's get started! click the menu button in the top left hand corner and select 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mmn-PL-HS6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1223" y="402"/>
+            <point key="canvasLocation" x="1222.5" y="402"/>
         </scene>
         <!--Positive Future Rates-->
         <scene sceneID="Hm1-Id-g5k">
@@ -617,11 +617,11 @@ Let's get started! click the menu button in the top left hand corner and select 
                         <viewControllerLayoutGuide type="bottom" id="RlJ-aE-HgO"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="2Cy-IC-Ewu">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="4000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="3600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LGJ-s4-YyA">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="4000"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="3600"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7jG-pg-SNw">
                                         <rect key="frame" x="0.0" y="-64" width="375" height="4000"/>
@@ -678,7 +678,7 @@ However, we can simplify this by thinking of the mortgage as a fixed rate mortga
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="4000" id="Vzu-cM-CBu" userLabel="height = 4000"/>
+                                            <constraint firstAttribute="height" constant="3600" id="Vzu-cM-CBu" userLabel="height = 4000"/>
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qPb-GJ-Rar">
@@ -972,7 +972,7 @@ Next, lets move on to Discount Mortgages. Click on the menu to progress!</string
                     </view>
                     <navigationItem key="navigationItem" title="Tracker Mortgages" id="6ix-Gd-2LL"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="375" height="4000"/>
+                    <size key="freeformSize" width="375" height="3600"/>
                     <connections>
                         <outlet property="strikeCounter" destination="zyT-AD-sza" id="S1O-m0-SbL"/>
                         <outlet property="testAnswer" destination="RN3-tM-2Dn" id="drh-be-USF"/>
@@ -1000,7 +1000,7 @@ Next, lets move on to Discount Mortgages. Click on the menu to progress!</string
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="2000"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WJW-pS-fPv">
-                                        <rect key="frame" x="0.0" y="-64" width="375" height="667"/>
+                                        <rect key="frame" x="0.0" y="-64" width="375" height="2000"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BCG-fH-ggP">
                                                 <rect key="frame" x="102" y="122" width="171" height="26"/>
@@ -1053,10 +1053,155 @@ Next, lets move on to Discount Mortgages. Click on the menu to progress!</string
                     <navigationItem key="navigationItem" title="Discount Mortgages" id="vlw-r4-hG3"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="2000"/>
+                    <connections>
+                        <segue destination="tNs-DU-lEK" kind="push" id="xb6-pt-n70"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NZ7-t9-RR5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3649.5" y="401"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="02l-Jf-iQE">
+            <objects>
+                <viewController restorationIdentifier="AboutVC" storyboardIdentifier="AboutVC" id="tNs-DU-lEK" customClass="AboutVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KdE-Ud-JqA"/>
+                        <viewControllerLayoutGuide type="bottom" id="nI4-hb-jzA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0fC-1J-odt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="2000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZAR-CR-xve">
+                                <rect key="frame" x="0.0" y="64" width="375" height="1936"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Ec-tP-mQw">
+                                        <rect key="frame" x="0.0" y="-64" width="375" height="1936"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JiX-z9-p7I">
+                                                <rect key="frame" x="17" y="46" width="343" height="191"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">This application was collaboratively built by a team of final year mathematics students from the University of Leeds, with assistance and oversight from two university professors.
+
+The project aim was to develop a learning-based application to assist those less informed about mortgages.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Chris Bodger" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxp-on-CNY">
+                                                <rect key="frame" x="33" y="383" width="115" height="23"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Harry Tong" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rbL-3G-qEG">
+                                                <rect key="frame" x="206" y="536" width="97" height="26"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About MALT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AQ8-eC-odP">
+                                                <rect key="frame" x="17" y="8" width="342" height="46"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                                <color key="textColor" red="0.05025453866" green="0.26821053030000003" blue="0.3970857263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About The Team" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xm3-Mi-Iej">
+                                                <rect key="frame" x="17" y="262" width="342" height="46"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                                <color key="textColor" red="0.05025453866" green="0.26821053030000003" blue="0.3970857263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CBodger.png" translatesAutoresizingMaskIntoConstraints="NO" id="7wD-0B-KW0">
+                                                <rect key="frame" x="214" y="316" width="145" height="156"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HTong.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="IPZ-OQ-6Lz">
+                                                <rect key="frame" x="17" y="480" width="145" height="156"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Undergraduate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="noL-z8-UNw">
+                                                <rect key="frame" x="33" y="403" width="93" height="14"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mathematics With Finance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Yy-SE-3zE">
+                                                <rect key="frame" x="33" y="414" width="154" height="14"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Undergraduate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eph-MP-ZaA">
+                                                <rect key="frame" x="206" y="555" width="93" height="14"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mathematics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gu4-aa-N4s">
+                                                <rect key="frame" x="206" y="566" width="154" height="14"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About Our Mascot" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iPA-8M-650">
+                                                <rect key="frame" x="17" y="1406" width="342" height="46"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                                <color key="textColor" red="0.05025453866" green="0.26821053030000003" blue="0.3970857263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Housey McHouseface was intricately designed by Harry Tong, drawing inspiration from Chris Bodger." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UV0-7h-mZr">
+                                                <rect key="frame" x="17" y="1460" width="343" height="69"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HouseyInspiration.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="1QL-wD-kS2">
+                                                <rect key="frame" x="15" y="1537" width="151" height="179"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="thumbsuphousey.png" translatesAutoresizingMaskIntoConstraints="NO" id="dEh-oo-VXQ">
+                                                <rect key="frame" x="205" y="1537" width="138" height="179"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="5Ec-tP-mQw" firstAttribute="centerX" secondItem="ZAR-CR-xve" secondAttribute="centerX" id="ELB-jX-a5R"/>
+                                    <constraint firstItem="5Ec-tP-mQw" firstAttribute="centerY" secondItem="ZAR-CR-xve" secondAttribute="centerY" id="HGR-0q-RtV"/>
+                                    <constraint firstAttribute="bottom" secondItem="5Ec-tP-mQw" secondAttribute="bottom" id="Ntc-LW-1gE"/>
+                                    <constraint firstAttribute="trailing" secondItem="5Ec-tP-mQw" secondAttribute="trailing" id="PKs-9F-MKQ"/>
+                                    <constraint firstItem="5Ec-tP-mQw" firstAttribute="leading" secondItem="ZAR-CR-xve" secondAttribute="leading" id="doy-n2-tIo"/>
+                                    <constraint firstItem="5Ec-tP-mQw" firstAttribute="top" secondItem="ZAR-CR-xve" secondAttribute="top" id="hZV-mj-KDM"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ZAR-CR-xve" secondAttribute="bottom" id="2EZ-u6-AVC"/>
+                            <constraint firstAttribute="trailing" secondItem="ZAR-CR-xve" secondAttribute="trailing" id="UuO-Vh-5NM"/>
+                            <constraint firstItem="ZAR-CR-xve" firstAttribute="top" secondItem="KdE-Ud-JqA" secondAttribute="bottom" id="dYh-8J-ncP"/>
+                            <constraint firstItem="ZAR-CR-xve" firstAttribute="leading" secondItem="0fC-1J-odt" secondAttribute="leading" id="e4T-J6-dHr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="About" id="EDi-Ik-c75"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7OR-s7-xUK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4599.5" y="-249"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nrt-yR-DmY">
@@ -1367,7 +1512,10 @@ Next, lets move on to Discount Mortgages. Click on the menu to progress!</string
         </scene>
     </scenes>
     <resources>
+        <image name="CBodger.png" width="251" height="294"/>
         <image name="FixedRateFormula.png" width="904" height="292"/>
+        <image name="HTong.jpg" width="400" height="400"/>
+        <image name="HouseyInspiration.jpg" width="1536" height="2048"/>
         <image name="Tracker1.png" width="530" height="376"/>
         <image name="Tracker_ExampleMortgage1Ans.png" width="534" height="144"/>
         <image name="Tracker_ExampleMortgage1Calc.png" width="1470" height="284"/>
@@ -1375,6 +1523,7 @@ Next, lets move on to Discount Mortgages. Click on the menu to progress!</string
         <image name="Tracker_MortgageBreakdown.png" width="1818" height="432"/>
         <image name="Tracker_TotAmountPaid.png" width="1908" height="206"/>
         <image name="houseymchouseface.png" width="320" height="290"/>
+        <image name="thumbsuphousey.png" width="320" height="306"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

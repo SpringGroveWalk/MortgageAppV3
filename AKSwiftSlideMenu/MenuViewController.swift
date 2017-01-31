@@ -59,6 +59,7 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
         arrayMenuOptions.append(["title":"Fixed Rate Mortgage", "icon":"PlayIcon"])
         arrayMenuOptions.append(["title":"Tracker Mortgage", "icon":"PlayIcon"])
         arrayMenuOptions.append(["title":"Discount Mortgage", "icon":"PlayIcon"])
+        arrayMenuOptions.append(["title":"About", "icon":"PlayIcon"])
         
         tblMenuOptions.reloadData()
     }

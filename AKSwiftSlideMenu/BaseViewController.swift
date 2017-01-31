@@ -47,6 +47,12 @@ class BaseViewController: UIViewController, SlideMenuDelegate {
             self.openViewControllerBasedOnIdentifier("DiscountVC")
             
             break
+        case 4:
+            print("About\n", terminator: "")
+            
+            self.openViewControllerBasedOnIdentifier("AboutVC")
+            
+            break
         default:
             print("default\n", terminator: "")
         }
