@@ -72,7 +72,7 @@
                         <outlet property="beginButton" destination="k7u-Nu-mcA" id="VF5-Z1-lZ8"/>
                         <outlet property="imageView" destination="tBy-Nf-Bkq" id="NjL-qK-KV2"/>
                         <outlet property="nameTextField" destination="SbR-ml-Pyj" id="0D1-0m-1xq"/>
-                        <segue destination="vXZ-lx-hvc" kind="push" id="pHR-Ls-pKX"/>
+                        <segue destination="vXZ-lx-hvc" kind="push" identifier="LandToHome" id="pHR-Ls-pKX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ADh-Pz-Y7M" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -322,7 +322,7 @@ Let's get started! click the menu button in the top left hand corner and select 
                         <outlet property="interestRateTextField" destination="tts-P7-QZp" id="b2M-aN-xUw"/>
                         <outlet property="loanLengthTextField" destination="r8q-Xt-2xC" id="lTd-S9-I84"/>
                         <outlet property="monthlyPaymentTextField" destination="mCC-Jt-fck" id="YLk-13-ekP"/>
-                        <segue destination="rL0-eg-F41" kind="push" id="Tpj-uK-KEc"/>
+                        <segue destination="rL0-eg-F41" kind="push" identifier="FixedToTracker" id="Tpj-uK-KEc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mmn-PL-HS6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -330,164 +330,64 @@ Let's get started! click the menu button in the top left hand corner and select 
             <point key="canvasLocation" x="1223" y="402"/>
         </scene>
         <!--Positive Future Rates-->
-        <scene sceneID="idZ-dA-vD1">
-            <objects>
-                <viewController id="VsO-bq-Aag" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="oM1-1A-VP0"/>
-                        <viewControllerLayoutGuide type="bottom" id="pTb-BH-9jt"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="5tf-wl-tAx">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="4000"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EWp-qv-nRD">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="4000"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HW3-ah-rpL">
-                                        <rect key="frame" x="0.0" y="-64" width="375" height="2000"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="2000" id="4su-qd-Aq7"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="HW3-ah-rpL" firstAttribute="top" secondItem="EWp-qv-nRD" secondAttribute="top" id="1KB-PS-d8c"/>
-                                    <constraint firstAttribute="trailing" secondItem="HW3-ah-rpL" secondAttribute="trailing" id="PCr-JD-lfQ"/>
-                                    <constraint firstItem="HW3-ah-rpL" firstAttribute="leading" secondItem="EWp-qv-nRD" secondAttribute="leading" id="PR5-gP-MmT"/>
-                                    <constraint firstAttribute="bottom" secondItem="HW3-ah-rpL" secondAttribute="bottom" id="cki-yc-Vjk"/>
-                                </constraints>
-                            </scrollView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="HW3-ah-rpL" firstAttribute="width" secondItem="5tf-wl-tAx" secondAttribute="width" id="Asu-sV-goK"/>
-                            <constraint firstItem="EWp-qv-nRD" firstAttribute="leading" secondItem="5tf-wl-tAx" secondAttribute="leading" id="EuT-3h-12n"/>
-                            <constraint firstItem="EWp-qv-nRD" firstAttribute="top" secondItem="5tf-wl-tAx" secondAttribute="top" id="YB5-V1-1eu"/>
-                            <constraint firstAttribute="bottom" secondItem="EWp-qv-nRD" secondAttribute="bottom" id="wvD-1Z-f8M"/>
-                            <constraint firstAttribute="trailing" secondItem="EWp-qv-nRD" secondAttribute="trailing" id="zCB-Ze-2az"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Positive Future Rates" id="9ys-js-4fR"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Diw-3B-2P1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1674" y="3594"/>
-        </scene>
-        <!--Average Future Rates-->
-        <scene sceneID="FFr-D7-ecV">
-            <objects>
-                <viewController id="BkL-4k-x71" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Hho-ew-2iB"/>
-                        <viewControllerLayoutGuide type="bottom" id="D2W-FQ-EvP"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="6rm-yg-DgF">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="4000"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="inF-P0-ZVC">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="4000"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kQT-KF-6S8">
-                                        <rect key="frame" x="0.0" y="-64" width="375" height="2000"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="2000" id="sfX-gO-iE6"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="kQT-KF-6S8" firstAttribute="leading" secondItem="inF-P0-ZVC" secondAttribute="leading" id="ND2-GB-Wjg"/>
-                                    <constraint firstAttribute="bottom" secondItem="kQT-KF-6S8" secondAttribute="bottom" id="fQC-kD-U6S"/>
-                                    <constraint firstItem="kQT-KF-6S8" firstAttribute="top" secondItem="inF-P0-ZVC" secondAttribute="top" id="gzd-Xv-fny"/>
-                                    <constraint firstAttribute="trailing" secondItem="kQT-KF-6S8" secondAttribute="trailing" id="vS8-U7-3QJ"/>
-                                </constraints>
-                            </scrollView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="inF-P0-ZVC" secondAttribute="trailing" id="1Ze-qL-Ffd"/>
-                            <constraint firstItem="kQT-KF-6S8" firstAttribute="width" secondItem="6rm-yg-DgF" secondAttribute="width" id="AYB-Jg-4Qy"/>
-                            <constraint firstItem="inF-P0-ZVC" firstAttribute="top" secondItem="6rm-yg-DgF" secondAttribute="top" id="Apf-kg-a67"/>
-                            <constraint firstAttribute="bottom" secondItem="inF-P0-ZVC" secondAttribute="bottom" id="ryF-x7-5zf"/>
-                            <constraint firstItem="inF-P0-ZVC" firstAttribute="leading" secondItem="6rm-yg-DgF" secondAttribute="leading" id="uVv-c3-7zq"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Average Future Rates" id="Oyg-gv-da4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zJp-v7-1Jb" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2274" y="3594"/>
-        </scene>
-        <!--Negative Future Rates-->
-        <scene sceneID="O6l-ui-PX4">
-            <objects>
-                <viewController id="iec-93-dlY" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="srq-iP-mLV"/>
-                        <viewControllerLayoutGuide type="bottom" id="wYR-I5-0UA"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="sgB-xD-JSY">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="4000"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sZB-DZ-OAD">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="4000"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VbA-dp-OPb">
-                                        <rect key="frame" x="0.0" y="-64" width="375" height="2000"/>
-                                        <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tracker1.png" translatesAutoresizingMaskIntoConstraints="NO" id="Pfw-kh-wP5">
-                                                <rect key="frame" x="16" y="98" width="343" height="205"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </view>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="VbA-dp-OPb" firstAttribute="top" secondItem="sZB-DZ-OAD" secondAttribute="top" id="Kpj-Yy-XpR"/>
-                                    <constraint firstItem="VbA-dp-OPb" firstAttribute="centerY" secondItem="sZB-DZ-OAD" secondAttribute="centerY" id="OCS-H4-gjm"/>
-                                    <constraint firstAttribute="trailing" secondItem="VbA-dp-OPb" secondAttribute="trailing" id="UHY-DH-LWX"/>
-                                    <constraint firstAttribute="bottom" secondItem="VbA-dp-OPb" secondAttribute="bottom" id="buE-9O-D91"/>
-                                    <constraint firstItem="VbA-dp-OPb" firstAttribute="centerX" secondItem="sZB-DZ-OAD" secondAttribute="centerX" id="doB-QA-5J9"/>
-                                    <constraint firstItem="VbA-dp-OPb" firstAttribute="leading" secondItem="sZB-DZ-OAD" secondAttribute="leading" id="x5A-Av-Z2I"/>
-                                </constraints>
-                            </scrollView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="sZB-DZ-OAD" firstAttribute="leading" secondItem="sgB-xD-JSY" secondAttribute="leading" id="CG4-5p-i2s"/>
-                            <constraint firstAttribute="trailing" secondItem="sZB-DZ-OAD" secondAttribute="trailing" id="iz8-ns-Cha"/>
-                            <constraint firstItem="sZB-DZ-OAD" firstAttribute="top" secondItem="sgB-xD-JSY" secondAttribute="top" id="nWu-Le-Ogd"/>
-                            <constraint firstAttribute="bottom" secondItem="sZB-DZ-OAD" secondAttribute="bottom" id="qWN-BG-Zn5"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Negative Future Rates" id="K4T-nf-brH"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zjI-rI-E5H" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2799" y="3530"/>
-        </scene>
-        <!--Positive Future Rates-->
         <scene sceneID="Hm1-Id-g5k">
             <objects>
-                <viewController id="fLV-6I-6iw" sceneMemberID="viewController">
+                <viewController restorationIdentifier="DisPosFutRatVC" storyboardIdentifier="DisPosFutRatVC" id="fLV-6I-6iw" customClass="DisPosFutRatVC" customModule="MortgageAssistance_LearningTool" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zjf-1B-CQD"/>
                         <viewControllerLayoutGuide type="bottom" id="J8D-us-ofB"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="mwP-vl-cdj">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="2000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I59-h2-6Qz">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="2000"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ahm-P4-gIo">
                                         <rect key="frame" x="0.0" y="-64" width="375" height="2000"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Input Loan Value" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tGw-y4-KVf">
+                                                <rect key="frame" x="80" y="154" width="215" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Output Values" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dTm-02-0wu">
+                                                <rect key="frame" x="80" y="264" width="215" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                                </accessibility>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kzp-lj-w4p">
+                                                <rect key="frame" x="164" y="206" width="46" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="calculateButton5:" destination="fLV-6I-6iw" eventType="touchUpInside" id="Fva-c9-7bA"/>
+                                                    <action selector="calculateButton:" destination="rL0-eg-F41" eventType="touchUpInside" id="pDb-Au-naV"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pqg-fN-A49">
+                                                <rect key="frame" x="133" y="1830" width="108" height="84"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jUS-eg-YfA">
+                                                <rect key="frame" x="0.0" y="67" width="131" height="56"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="goBackButton:" destination="fLV-6I-6iw" eventType="touchUpInside" id="ENe-3a-lAp"/>
+                                                    <action selector="goBackButton:" destination="ejZ-UX-KZ8" eventType="touchUpInside" id="TRG-Bu-ooA"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="2000" id="qeu-wH-aV0"/>
@@ -512,6 +412,10 @@ Let's get started! click the menu button in the top left hand corner and select 
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Positive Future Rates" id="2dM-LA-YoG"/>
+                    <connections>
+                        <outlet property="valueReturn5" destination="dTm-02-0wu" id="ERW-wd-c4Z"/>
+                        <outlet property="variableLoanAmount5" destination="dTm-02-0wu" id="VXQ-fe-K8c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iqD-dP-nbs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -520,20 +424,63 @@ Let's get started! click the menu button in the top left hand corner and select 
         <!--Average Future Rates-->
         <scene sceneID="M4o-1S-Tie">
             <objects>
-                <viewController id="MUb-iX-f8S" sceneMemberID="viewController">
+                <viewController restorationIdentifier="DisAveFutRatVC" storyboardIdentifier="DisAveFutRatVC" id="MUb-iX-f8S" customClass="DisAveFutRatVC" customModule="MortgageAssistance_LearningTool" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zJf-AY-ajh"/>
                         <viewControllerLayoutGuide type="bottom" id="eYv-n9-3SK"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="7JP-kW-BMk">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="2000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qnI-bH-EnX">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="2000"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p3g-8K-Oqp">
                                         <rect key="frame" x="0.0" y="-64" width="375" height="2000"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Input Loan Value" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yiv-n6-Idg">
+                                                <rect key="frame" x="80" y="130" width="215" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Output Values" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="smv-hI-glZ">
+                                                <rect key="frame" x="80" y="240" width="215" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                                </accessibility>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4F1-In-Quf">
+                                                <rect key="frame" x="164" y="182" width="46" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="calculateButton6:" destination="MUb-iX-f8S" eventType="touchUpInside" id="K72-9t-9he"/>
+                                                    <action selector="calculateButton:" destination="rL0-eg-F41" eventType="touchUpInside" id="Qp8-2C-3l7"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GpX-08-nKc">
+                                                <rect key="frame" x="133" y="1815" width="108" height="84"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XkP-TB-BGm">
+                                                <rect key="frame" x="0.0" y="66" width="131" height="56"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="goBackButton:" destination="MUb-iX-f8S" eventType="touchUpInside" id="Ih3-jb-yjs"/>
+                                                    <action selector="goBackButton:" destination="ejZ-UX-KZ8" eventType="touchUpInside" id="JVd-kV-5oO"/>
+                                                    <action selector="goBackButton:" destination="fLV-6I-6iw" eventType="touchUpInside" id="lfQ-7E-nm1"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="2000" id="vld-12-S0U"/>
@@ -558,6 +505,10 @@ Let's get started! click the menu button in the top left hand corner and select 
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Average Future Rates" id="oOs-fq-b8n"/>
+                    <connections>
+                        <outlet property="valueReturn6" destination="smv-hI-glZ" id="3ff-B0-qQM"/>
+                        <outlet property="variableLoanAmount6" destination="yiv-n6-Idg" id="dGJ-qK-c8G"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dHo-3N-p8x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -566,20 +517,64 @@ Let's get started! click the menu button in the top left hand corner and select 
         <!--Negative Future Rates-->
         <scene sceneID="Csy-7V-1yc">
             <objects>
-                <viewController id="IGm-n5-WXl" sceneMemberID="viewController">
+                <viewController restorationIdentifier="DisNegFutRatVC" storyboardIdentifier="DisNegFutRatVC" id="IGm-n5-WXl" customClass="DisNegFutRatVC" customModule="MortgageAssistance_LearningTool" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nkW-9B-tyj"/>
                         <viewControllerLayoutGuide type="bottom" id="XsL-o1-nsR"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="YIW-sP-bsd">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="2000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rx5-T6-Cda">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="2000"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7He-TZ-xKC">
                                         <rect key="frame" x="0.0" y="-64" width="375" height="2000"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Input Loan Value" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fav-6a-Y6J">
+                                                <rect key="frame" x="80" y="150" width="215" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Output Values" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZpA-cW-lw5">
+                                                <rect key="frame" x="80" y="260" width="215" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                                </accessibility>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4l5-oT-AAy">
+                                                <rect key="frame" x="164" y="202" width="46" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="calculateButton7:" destination="IGm-n5-WXl" eventType="touchUpInside" id="UYq-gv-ELq"/>
+                                                    <action selector="calculateButton:" destination="rL0-eg-F41" eventType="touchUpInside" id="8Mp-eY-Rvw"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VnD-qK-Iwc">
+                                                <rect key="frame" x="133" y="1822" width="108" height="84"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0eP-Pg-K2C">
+                                                <rect key="frame" x="0.0" y="67" width="131" height="56"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="goBackButton:" destination="ejZ-UX-KZ8" eventType="touchUpInside" id="9FQ-ww-2aA"/>
+                                                    <action selector="goBackButton:" destination="IGm-n5-WXl" eventType="touchUpInside" id="CMD-lj-fpi"/>
+                                                    <action selector="goBackButton:" destination="MUb-iX-f8S" eventType="touchUpInside" id="OMh-Pt-6nx"/>
+                                                    <action selector="goBackButton:" destination="fLV-6I-6iw" eventType="touchUpInside" id="khE-8S-1wG"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="2000" id="oXS-n9-fuX"/>
@@ -604,6 +599,10 @@ Let's get started! click the menu button in the top left hand corner and select 
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Negative Future Rates" id="l2T-B2-5wT"/>
+                    <connections>
+                        <outlet property="valueReturn7" destination="ZpA-cW-lw5" id="Nuy-lK-W9x"/>
+                        <outlet property="variableLoanAmount7" destination="Fav-6a-Y6J" id="g1D-I7-Uw0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PaK-pE-loX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -679,18 +678,42 @@ However, we can simplify this by thinking of the mortgage as a fixed rate mortga
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="3000" id="Vzu-cM-CBu" userLabel="height = 4000"/>
+                                            <constraint firstAttribute="height" constant="4000" id="Vzu-cM-CBu" userLabel="height = 4000"/>
                                         </constraints>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qPb-GJ-Rar">
+                                        <rect key="frame" x="102" y="3181" width="171" height="26"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Positive Future Rates"/>
+                                        <connections>
+                                            <segue destination="ejZ-UX-KZ8" kind="modal" id="NFq-dG-pCv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugw-84-9jC">
+                                        <rect key="frame" x="103" y="3215" width="169" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Average Future Rates"/>
+                                        <connections>
+                                            <segue destination="clJ-AO-lev" kind="modal" id="P9h-Dk-zh8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lBt-bZ-ZVh">
+                                        <rect key="frame" x="101" y="3248" width="173" height="26"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Negative Future Rates"/>
+                                        <connections>
+                                            <segue destination="QVE-wG-lR5" kind="modal" id="sQb-Ht-0k0"/>
+                                        </connections>
+                                    </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fixed Rate Conversion - Example" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nlR-pM-gbZ">
-                                        <rect key="frame" x="8" y="648" width="359" height="46"/>
+                                        <rect key="frame" x="8" y="697" width="359" height="46"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                         <color key="textColor" red="0.05025453866" green="0.26821053030000003" blue="0.3970857263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2em-iq-kDa">
-                                        <rect key="frame" x="8" y="685" width="359" height="187"/>
+                                        <rect key="frame" x="8" y="734" width="359" height="187"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <string key="text">So let's assume we have a 20 year mortgage for a total amount of £100,000. Let's say the current annual interest rate is 9% (6% as the BoE rate and 3% as the agreed margin), and we know that the interest rate will change only once after 10 years. Instead of seeing this as one 20 year mortgage with a varying interest rate, we can instead think of it as two 10 year mortgages with one interest rate each!</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -698,18 +721,18 @@ However, we can simplify this by thinking of the mortgage as a fixed rate mortga
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tracker_MortgageBreakdown.png" translatesAutoresizingMaskIntoConstraints="NO" id="o8O-H4-Y9q">
-                                        <rect key="frame" x="8" y="884" width="359" height="101"/>
+                                        <rect key="frame" x="8" y="933" width="359" height="101"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Part 1 - Monthly Payment of Mortgage 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qg9-Wc-egm">
-                                        <rect key="frame" x="8" y="1008" width="359" height="26"/>
+                                        <rect key="frame" x="8" y="1057" width="359" height="26"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MSt-lw-JTO">
-                                        <rect key="frame" x="8" y="1030" width="359" height="91"/>
+                                        <rect key="frame" x="8" y="1079" width="359" height="91"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <string key="text">We first need to find just how much we have to fork out for the first ten years of the mortgage with an interest rate of 9%. To do this, we can use the fixed rate formula we discussed earlier!</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -717,11 +740,11 @@ However, we can simplify this by thinking of the mortgage as a fixed rate mortga
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FixedRateFormula.png" translatesAutoresizingMaskIntoConstraints="NO" id="wfm-Gc-Ag4">
-                                        <rect key="frame" x="39" y="1129" width="296" height="95"/>
+                                        <rect key="frame" x="39" y="1178" width="296" height="95"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDQ-Zg-VAm">
-                                        <rect key="frame" x="8" y="1232" width="359" height="80"/>
+                                        <rect key="frame" x="8" y="1281" width="359" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <string key="text">We know the amount borrow is 100,000, the length of the loan is 20 years (or 240 months) and the total monthly interest rate is 0.75% (9% split over 12 months), which give us:</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -729,15 +752,15 @@ However, we can simplify this by thinking of the mortgage as a fixed rate mortga
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tracker_ExampleMortgage1Calc.png" translatesAutoresizingMaskIntoConstraints="NO" id="9qd-sj-I8H">
-                                        <rect key="frame" x="24" y="1318" width="327" height="68"/>
+                                        <rect key="frame" x="24" y="1367" width="327" height="68"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tracker_ExampleMortgage1Ans.png" translatesAutoresizingMaskIntoConstraints="NO" id="78r-AM-rEv">
-                                        <rect key="frame" x="228" y="1380" width="123" height="43"/>
+                                        <rect key="frame" x="228" y="1429" width="123" height="43"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLG-I0-JVM">
-                                        <rect key="frame" x="8" y="1431" width="359" height="104"/>
+                                        <rect key="frame" x="8" y="1480" width="359" height="104"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <string key="text">So we now know we'll be paying £899.73 each month! This includes an amount to pay off the interest due, and a remaining amount which reduces the amount outstanding on the mortgage.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -745,7 +768,7 @@ However, we can simplify this by thinking of the mortgage as a fixed rate mortga
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cil-Mf-mdd">
-                                        <rect key="frame" x="8" y="1563" width="359" height="104"/>
+                                        <rect key="frame" x="8" y="1612" width="359" height="104"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <string key="text">Imagine we are now ten years in the future, and have been happily paying our £899.73 each month. At this point, the BoE announces they will hike up their interest rate from 6% to 9%. This increases our total annual interest by 3%!</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -753,7 +776,7 @@ However, we can simplify this by thinking of the mortgage as a fixed rate mortga
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nv5-Qh-6Km">
-                                        <rect key="frame" x="8" y="1675" width="359" height="174"/>
+                                        <rect key="frame" x="8" y="1724" width="359" height="174"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <string key="text">We can now calculate in the same way as above for our second mortgage, however we need to know the current amount left to repay on the mortgage. Afterall, the £899.73 we've been paying monthly must have reduced the outstanding amount. We can work out how much we've paid in total, however we need to work out what proportion was used to pay the interest, and how much was left to pay off the mortgage!</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -761,7 +784,7 @@ However, we can simplify this by thinking of the mortgage as a fixed rate mortga
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RMs-eO-DgS">
-                                        <rect key="frame" x="8" y="1912" width="359" height="101"/>
+                                        <rect key="frame" x="8" y="1961" width="359" height="101"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <string key="text">Now working out the total amount of interest paid is too difficult to do by hand. The easiest way to do this is to set up an Excel sheet. However, for the purposes of this example we have calculated this for you:</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -769,22 +792,22 @@ However, we can simplify this by thinking of the mortgage as a fixed rate mortga
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Part 2 - Mortgage Value of Mortgage 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7q4-kQ-R5t">
-                                        <rect key="frame" x="8" y="1543" width="359" height="26"/>
+                                        <rect key="frame" x="8" y="1592" width="359" height="26"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tracker_TotAmountPaid.png" translatesAutoresizingMaskIntoConstraints="NO" id="Mdg-9o-8d4">
-                                        <rect key="frame" x="8" y="1857" width="359" height="47"/>
+                                        <rect key="frame" x="8" y="1906" width="359" height="47"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tracker_InterestCalc.png" translatesAutoresizingMaskIntoConstraints="NO" id="pJt-fO-lPR">
-                                        <rect key="frame" x="85" y="2021" width="204" height="26"/>
+                                        <rect key="frame" x="85" y="2070" width="204" height="26"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bpG-SL-wha">
-                                        <rect key="frame" x="8" y="2055" width="359" height="144"/>
+                                        <rect key="frame" x="8" y="2104" width="359" height="144"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <string key="text">It follows that the amount we have repaid is then:
 
@@ -798,14 +821,14 @@ and so the mortgage value after ten years is:
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Part 3 - Monthly Payment of Mortgage 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vO0-aM-wAr">
-                                        <rect key="frame" x="8" y="2207" width="359" height="26"/>
+                                        <rect key="frame" x="8" y="2256" width="359" height="26"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E7D-Nu-vqg">
-                                        <rect key="frame" x="8" y="2228" width="359" height="104"/>
+                                        <rect key="frame" x="8" y="2277" width="359" height="104"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <string key="text">We now have everything we need to calculate the monthly payments of the second mortgage. This is almost identical to the work we performed in part 1 above, however don't forget the mortgage length has now changed! </string>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -813,21 +836,21 @@ and so the mortgage value after ten years is:
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Test - Monthly payment for mortgage 2" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oj7-8D-57Q">
-                                        <rect key="frame" x="8" y="2357" width="359" height="24"/>
+                                        <rect key="frame" x="8" y="2406" width="359" height="24"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Answer (To nearest £): £" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VOt-MB-7a3">
-                                        <rect key="frame" x="24" y="2463" width="192" height="21"/>
+                                        <rect key="frame" x="24" y="2512" width="192" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebI-oS-D8J">
-                                        <rect key="frame" x="192" y="2496" width="143" height="30"/>
+                                        <rect key="frame" x="224" y="2545" width="143" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Check"/>
                                         <connections>
@@ -835,7 +858,7 @@ and so the mortgage value after ten years is:
                                         </connections>
                                     </button>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Let's see if you got it!" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g45-ll-TqB">
-                                        <rect key="frame" x="8" y="2550" width="359" height="30"/>
+                                        <rect key="frame" x="8" y="2599" width="359" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -845,35 +868,35 @@ and so the mortgage value after ten years is:
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Result:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hnq-SP-es9">
-                                        <rect key="frame" x="8" y="2528" width="57" height="21"/>
+                                        <rect key="frame" x="8" y="2577" width="57" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="e.g. 1364" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RN3-tM-2Dn">
-                                        <rect key="frame" x="224" y="2458" width="143" height="30"/>
+                                        <rect key="frame" x="224" y="2507" width="143" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Have a go at calculating the new monthly payment. Use part 1 to help you! Careful, you have 3 chances!" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3kF-ov-7eG">
-                                        <rect key="frame" x="8" y="2381" width="359" height="58"/>
+                                        <rect key="frame" x="8" y="2430" width="359" height="58"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Strikes:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mRs-jZ-3Ex">
-                                        <rect key="frame" x="8" y="2588" width="84" height="21"/>
+                                        <rect key="frame" x="8" y="2637" width="84" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Remember, 3 strikes!" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zyT-AD-sza">
-                                        <rect key="frame" x="8" y="2610" width="359" height="30"/>
+                                        <rect key="frame" x="8" y="2659" width="359" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -882,55 +905,53 @@ and so the mortgage value after ten years is:
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Input Loan Value" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g2A-Vf-CCN">
-                                        <rect key="frame" x="80" y="3718" width="215" height="30"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Have a go at calculating the new monthly payment. Use part 1 to help you! Careful, you have 3 chances!" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vC4-1H-ZmL">
+                                        <rect key="frame" x="8" y="2719" width="359" height="58"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Output Values" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eGk-Pm-tfa">
-                                        <rect key="frame" x="80" y="3828" width="215" height="30"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The Reality" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iWc-Rf-Fb4">
+                                        <rect key="frame" x="8" y="2785" width="359" height="46"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <accessibility key="accessibilityConfiguration">
-                                            <accessibilityTraits key="traits" notEnabled="YES"/>
-                                        </accessibility>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                        <color key="textColor" red="0.05025453866" green="0.26821053030000003" blue="0.3970857263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQm-5x-Edw">
+                                        <rect key="frame" x="8" y="2825" width="359" height="180"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text">We have just learnt a basic technique to work out the actual payments you could expect to pay for a simplistic Tracker Mortgage. In reality though, the BoE can change the base rate every month. This could lead to 239 interest rate changes over a 20 year term! Clearly it is impractical to calculate this by hand (imagine doing the above calculations again and again...). Instead, we have designed a way to calculate this for you.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YzT-3c-1GQ">
-                                        <rect key="frame" x="164" y="3770" width="46" height="30"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u54-yL-DEv">
+                                        <rect key="frame" x="8" y="3020" width="359" height="143"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <connections>
-                                            <action selector="calculateButton:" destination="rL0-eg-F41" eventType="touchUpInside" id="3hN-ke-ocv"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qPb-GJ-Rar">
-                                        <rect key="frame" x="102" y="3596" width="171" height="26"/>
+                                        <string key="text">We have created three hypothetical situations that future interest rates could take over the next twenty years; postive future rates, average future rates and negative future rates. These should give you a rough idea of just how much you could expect to pay given each future economic climate. Click the links below to continue.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iVU-FX-KwO">
+                                        <rect key="frame" x="8" y="3318" width="359" height="143"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Positive Future Rates"/>
-                                        <connections>
-                                            <segue destination="VsO-bq-Aag" kind="push" id="hNs-4Y-8XS"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugw-84-9jC">
-                                        <rect key="frame" x="103" y="3630" width="169" height="25"/>
+                                        <string key="text">So that's all there is to it! We will conclude with a comparison of the Tracker Mortgage to other mortgage types within the "Comparison" option from the menu.
+
+Next, lets move on to Discount Mortgages. Click on the menu to progress!</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Summary" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eF3-hI-VjI">
+                                        <rect key="frame" x="8" y="3282" width="359" height="46"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Average Future Rates"/>
-                                        <connections>
-                                            <segue destination="BkL-4k-x71" kind="push" id="19f-2y-vVw"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lBt-bZ-ZVh">
-                                        <rect key="frame" x="101" y="3663" width="173" height="26"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Negative Future Rates"/>
-                                        <connections>
-                                            <segue destination="iec-93-dlY" kind="push" id="fJ9-Vx-7yB"/>
-                                        </connections>
-                                    </button>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                        <color key="textColor" red="0.05025453866" green="0.26821053030000003" blue="0.3970857263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="7jG-pg-SNw" firstAttribute="leading" secondItem="LGJ-s4-YyA" secondAttribute="leading" id="PAE-FH-845"/>
@@ -953,15 +974,10 @@ and so the mortgage value after ten years is:
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="4000"/>
                     <connections>
-                        <outlet property="BadButton" destination="lBt-bZ-ZVh" id="Seb-Ai-3qH"/>
-                        <outlet property="GoodButton" destination="qPb-GJ-Rar" id="JXD-GZ-0bG"/>
-                        <outlet property="OkayButton" destination="ugw-84-9jC" id="YB8-GS-OwJ"/>
                         <outlet property="strikeCounter" destination="zyT-AD-sza" id="S1O-m0-SbL"/>
                         <outlet property="testAnswer" destination="RN3-tM-2Dn" id="drh-be-USF"/>
                         <outlet property="testResult" destination="g45-ll-TqB" id="e6I-kf-J85"/>
-                        <outlet property="valueReturn" destination="eGk-Pm-tfa" id="QC3-f5-PXo"/>
-                        <outlet property="variableLoanAmount" destination="g2A-Vf-CCN" id="XO9-na-3Dn"/>
-                        <segue destination="Koh-g8-pud" kind="push" id="Uw2-R9-ojS"/>
+                        <segue destination="Koh-g8-pud" kind="push" identifier="TrackerToDiscount" id="Uw2-R9-ojS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2C0-wp-ZEO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -991,7 +1007,7 @@ and so the mortgage value after ten years is:
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Positive Future Rates"/>
                                                 <connections>
-                                                    <segue destination="fLV-6I-6iw" kind="push" id="P6b-CW-r97"/>
+                                                    <segue destination="fLV-6I-6iw" kind="modal" id="Hzp-fk-bPS"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LWq-5Y-WSm">
@@ -999,7 +1015,7 @@ and so the mortgage value after ten years is:
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Average Future Rates"/>
                                                 <connections>
-                                                    <segue destination="MUb-iX-f8S" kind="push" id="3Jf-ZZ-RfJ"/>
+                                                    <segue destination="MUb-iX-f8S" kind="modal" id="c47-7e-Y1r"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="byb-qA-12H">
@@ -1007,7 +1023,7 @@ and so the mortgage value after ten years is:
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Negative Future Rates"/>
                                                 <connections>
-                                                    <segue destination="IGm-n5-WXl" kind="push" id="RA0-uE-ubn"/>
+                                                    <segue destination="IGm-n5-WXl" kind="modal" id="nFA-gg-4uL"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -1040,7 +1056,7 @@ and so the mortgage value after ten years is:
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NZ7-t9-RR5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3649.5" y="401.5"/>
+            <point key="canvasLocation" x="3649.5" y="401"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nrt-yR-DmY">
@@ -1099,7 +1115,7 @@ and so the mortgage value after ten years is:
                                         <rect key="frame" x="0.0" y="22" width="316" height="54"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kmA-Ah-Pww" id="PkJ-pF-O9W">
-                                            <rect key="frame" x="0.0" y="0.0" width="316" height="53.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="316" height="53"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" tag="100" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qcm-8o-Buf">
@@ -1132,6 +1148,222 @@ and so the mortgage value after ten years is:
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q5J-uJ-gia" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-319" y="97"/>
+        </scene>
+        <!--Positive Future Rates-->
+        <scene sceneID="e5j-z4-7u5">
+            <objects>
+                <viewController restorationIdentifier="TraPosFutRatVC" storyboardIdentifier="TraPosFutRatVC" id="ejZ-UX-KZ8" customClass="TraPosFutRatVC" customModule="MortgageAssistance_LearningTool" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HeL-Ka-pya"/>
+                        <viewControllerLayoutGuide type="bottom" id="37c-05-ZUv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1Vr-zU-xS6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7cg-BH-qwk">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KwU-QW-uaM">
+                                        <rect key="frame" x="0.0" y="-64" width="375" height="2000"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Input Loan Value" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ePn-Lu-ZP6">
+                                                <rect key="frame" x="80" y="270" width="215" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Output Values" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qfd-xU-ZEy">
+                                                <rect key="frame" x="80" y="380" width="215" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                                </accessibility>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTn-MG-Joe">
+                                                <rect key="frame" x="164" y="322" width="46" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="calculateButton2:" destination="ejZ-UX-KZ8" eventType="touchUpInside" id="IQ8-Ki-WuU"/>
+                                                    <action selector="calculateButton:" destination="rL0-eg-F41" eventType="touchUpInside" id="pwZ-Pe-IxM"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ls3-Pr-u9j">
+                                                <rect key="frame" x="133" y="1703" width="108" height="84"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rxp-sG-xUs">
+                                                <rect key="frame" x="0.0" y="63" width="131" height="56"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="goBackButton:" destination="ejZ-UX-KZ8" eventType="touchUpInside" id="A4X-ep-Bxq"/>
+                                                </connections>
+                                            </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tracker1.png" translatesAutoresizingMaskIntoConstraints="NO" id="Pfw-kh-wP5">
+                                                <rect key="frame" x="24" y="479" width="343" height="205"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="2000" id="K1k-Ey-8zy"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="KwU-QW-uaM" firstAttribute="top" secondItem="7cg-BH-qwk" secondAttribute="top" id="Jzu-L3-dEm"/>
+                                    <constraint firstAttribute="bottom" secondItem="KwU-QW-uaM" secondAttribute="bottom" id="goO-Ja-kiV"/>
+                                    <constraint firstAttribute="trailing" secondItem="KwU-QW-uaM" secondAttribute="trailing" id="hIF-cg-0XI"/>
+                                    <constraint firstItem="KwU-QW-uaM" firstAttribute="leading" secondItem="7cg-BH-qwk" secondAttribute="leading" id="s0i-1U-bie"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7cg-BH-qwk" firstAttribute="leading" secondItem="1Vr-zU-xS6" secondAttribute="leading" id="AUh-Bb-Tzn"/>
+                            <constraint firstItem="KwU-QW-uaM" firstAttribute="width" secondItem="1Vr-zU-xS6" secondAttribute="width" id="ceB-JZ-rS6"/>
+                            <constraint firstItem="7cg-BH-qwk" firstAttribute="top" secondItem="1Vr-zU-xS6" secondAttribute="top" id="cm4-pS-Nf5"/>
+                            <constraint firstAttribute="bottom" secondItem="7cg-BH-qwk" secondAttribute="bottom" id="sNh-1R-dsa"/>
+                            <constraint firstAttribute="trailing" secondItem="7cg-BH-qwk" secondAttribute="trailing" id="viZ-eY-hz1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Positive Future Rates" id="EmL-k2-Sbx" userLabel="Positive Future Rates"/>
+                    <connections>
+                        <outlet property="valueReturn2" destination="qfd-xU-ZEy" id="8l7-Hu-vfX"/>
+                        <outlet property="variableLoanAmount2" destination="ePn-Lu-ZP6" id="pfD-QT-asq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cak-00-acg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1804.5" y="4647.5"/>
+        </scene>
+        <!--Tra Ave Fut RatVC-->
+        <scene sceneID="dMx-GQ-aQQ">
+            <objects>
+                <viewController restorationIdentifier="TraAveFutRatVC" storyboardIdentifier="TraAveFutRatVC" id="clJ-AO-lev" customClass="TraAveFutRatVC" customModule="MortgageAssistance_LearningTool" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dnC-8t-q0v"/>
+                        <viewControllerLayoutGuide type="bottom" id="OJP-ch-J7u"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="F0A-nM-KQ9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8oc-1R-iMT">
+                                <rect key="frame" x="0.0" y="0.0" width="131" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="goBackButton:" destination="clJ-AO-lev" eventType="touchUpInside" id="VMc-iS-eWK"/>
+                                    <action selector="goBackButton:" destination="ejZ-UX-KZ8" eventType="touchUpInside" id="a0X-mw-ul8"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Input Loan Value" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8oM-Kz-VAQ">
+                                <rect key="frame" x="80" y="110" width="215" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Output Values" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bzo-mW-88K">
+                                <rect key="frame" x="80" y="220" width="215" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AbV-mA-PZi">
+                                <rect key="frame" x="164" y="162" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="calculateButton2:" destination="ejZ-UX-KZ8" eventType="touchUpInside" id="c0M-xI-JI1"/>
+                                    <action selector="calculateButton3:" destination="clJ-AO-lev" eventType="touchUpInside" id="7jg-fT-TNU"/>
+                                    <action selector="calculateButton:" destination="rL0-eg-F41" eventType="touchUpInside" id="wsT-Cy-qnD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="valueReturn3" destination="Bzo-mW-88K" id="NVM-pv-CZk"/>
+                        <outlet property="variableLoanAmount3" destination="8oM-Kz-VAQ" id="VIC-TV-MwO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Ie-V8-5AS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2271" y="4644"/>
+        </scene>
+        <!--Tra Neg Fut RatVC-->
+        <scene sceneID="3Io-pv-Vqq">
+            <objects>
+                <viewController restorationIdentifier="TraNegFutRatVC" storyboardIdentifier="TraNegFutRatVC" id="QVE-wG-lR5" customClass="TraNegFutRatVC" customModule="MortgageAssistance_LearningTool" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BfC-ZX-w4f"/>
+                        <viewControllerLayoutGuide type="bottom" id="gc9-4P-Iwc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Az6-le-1S0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f7X-pk-Lkr">
+                                <rect key="frame" x="0.0" y="0.0" width="131" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="goBackButton:" destination="ejZ-UX-KZ8" eventType="touchUpInside" id="3Vg-Vt-8J1"/>
+                                    <action selector="goBackButton:" destination="QVE-wG-lR5" eventType="touchUpInside" id="jpX-b6-jee"/>
+                                    <action selector="goBackButton:" destination="clJ-AO-lev" eventType="touchUpInside" id="ozW-C8-n0a"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Input Loan Value" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KS3-ep-hoG">
+                                <rect key="frame" x="80" y="119" width="215" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Output Values" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B9i-kT-UGj">
+                                <rect key="frame" x="80" y="229" width="215" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="484-eN-klY">
+                                <rect key="frame" x="164" y="171" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="calculateButton2:" destination="ejZ-UX-KZ8" eventType="touchUpInside" id="geI-9a-uXk"/>
+                                    <action selector="calculateButton4:" destination="QVE-wG-lR5" eventType="touchUpInside" id="nfH-nH-ox6"/>
+                                    <action selector="calculateButton:" destination="rL0-eg-F41" eventType="touchUpInside" id="tV3-nf-NwY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="valueReturn4" destination="B9i-kT-UGj" id="6wq-SM-Uce"/>
+                        <outlet property="variableLoanAmount4" destination="KS3-ep-hoG" id="wDx-Q1-jly"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lsB-Fe-LmU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2741" y="4649"/>
         </scene>
     </scenes>
     <resources>

@@ -1,23 +1,26 @@
 //
-//  TrackerVC.swift
-//  AKSwiftSlideMenu
+//  DisPosFutRatVC.swift
+//  MortgageAssistance&LearningTool
 //
-//  Created by Chris Bodger on 10/11/2016.
+//  Created by Chris Bodger on 27/01/2017.
 //
 
 import UIKit
 
-class TrackerVC: BaseViewController {
-
-    @IBOutlet weak var GoodButton: UIButton!
-    @IBOutlet weak var OkayButton: UIButton!
-    @IBOutlet weak var BadButton: UIButton!
+class DisPosFutRatVC: BaseViewController {
+    
+    @IBAction func goBackButton(_ sender: Any) {
+    
+        self.dismiss(animated:true)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         addSlideMenuButton()
         // Do any additional setup after loading the view.
-    
+        
+        
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -27,7 +30,7 @@ class TrackerVC: BaseViewController {
     
     
     /*
-     // - Navigation
+     // MARK: - Navigation
      
      // In a storyboard-based application, you will often want to do a little preparation before navigation
      override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -35,12 +38,13 @@ class TrackerVC: BaseViewController {
      // Pass the selected object to the new view controller.
      }
      */
-@IBOutlet weak var variableLoanAmount: UITextField!
-@IBOutlet weak var valueReturn: UITextField!
+ 
+    @IBOutlet weak var variableLoanAmount5: UITextField!
+    @IBOutlet weak var valueReturn5: UITextField!
     
-    func letsDoThis(z: Float) -> Float {
+    func letsDoThis5(z: Float) -> Float {
         
-
+        
         var t = 241
         
         var T_1 = [Int]()
@@ -55,7 +59,7 @@ class TrackerVC: BaseViewController {
         
         // Create function to calculate principal, repayments and interest paid on a cumulative monthly basis
         
-        func variablerate(P: inout Float, t: Int) -> Float? {
+        func variablerate5(P: inout Float, t: Int) -> Float? {
             var principal = [Float]()
             var i_paid = [Float]()
             i_paid.append(0)
@@ -78,50 +82,18 @@ class TrackerVC: BaseViewController {
             
         }
         var u = Float(z)
-        let dd = variablerate(P: &u, t: 240)!
+        let dd = variablerate5(P: &u, t: 240)!
         return dd
     }
- 
-    @IBAction func calculateButton(_ sender: Any) {
-    
-    let x = (variableLoanAmount.text as! NSString).doubleValue
-    
-    let y = letsDoThis(z: Float(x))
-    let z = String(format: "%.2f", y)
-    
-    valueReturn.text = "\(z)"
-    
-    }
 
-    @IBOutlet weak var testAnswer: UITextField!
-    @IBOutlet weak var testResult: UITextField!
-    @IBOutlet weak var strikeCounter: UITextField!
+    @IBAction func calculateButton5(_ sender: Any) {
     
-var countcount = 0
-var strikestrike = 3
-    @IBAction func testCheck(_ sender: UIButton) {
-        if countcount < 3 {
-            let userAnswer = Int((testAnswer?.text!)!)
-                if userAnswer == 1019 {
-                    testResult.text = "correct!"
-                    countcount += 1
-                } else if userAnswer == 782{
-                    testResult.text = "Incorrect... Don't forget there's only 120 months left"
-                    countcount += 1
-                } else if userAnswer == 7499 {
-                    testResult.text = "Incorrect... Don't forget there's 120 months left"
-                    countcount += 1
-                } else {
-                    testResult.text = "Bad luck, try again!"
-                    countcount += 1
-                }
-            strikestrike -= 1
-            strikeCounter.text = "\(strikestrike) Strikes remaining"
-        } else {
-            testResult.text = "The answer is £1019. Now try and get this figure!"
-            strikeCounter.text = "0 Strikes remaining"
-        }
+        let x = (variableLoanAmount5.text as! NSString).doubleValue
+        
+        let y = letsDoThis5(z: Float(x))
+        let z = String(format: "%.2f", y)
+        
+        valueReturn5.text = "\(z)"
+    
     }
-    
-    
 }
