@@ -64,4 +64,12 @@ class PlayVC: BaseViewController {
         
     }
 
+    @IBAction func linkButton(_ sender: Any) {
+    
+        if let url = URL(string: "https://www.moneysupermarket.com/mortgages/") {
+            UIApplication.shared.openURL(url)
+        }
+    
+    }
+    
 }

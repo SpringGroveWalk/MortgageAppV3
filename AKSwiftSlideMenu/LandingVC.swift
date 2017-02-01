@@ -61,7 +61,7 @@ class LandingVC: BaseViewController {
         // Formatting of "Begin" Button
 
         
-        nameTextField.backgroundColor = .clear
+        nameTextField.backgroundColor = .white
         nameTextField.layer.cornerRadius = 5
         nameTextField.layer.borderWidth = 3
         nameTextField.layer.borderColor = UIColor.white.cgColor
